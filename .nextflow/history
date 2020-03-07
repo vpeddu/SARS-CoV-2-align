@@ -36,4 +36,4 @@
 2020-03-06 21:21:56	1m 50s	infallible_dijkstra	ERR	e53cddf55efbe3ca4dd4925afa16bc10	2b5e3b6d-1d13-4c44-9a2f-5ff5193810ad	nextflow run main.nf --INPUT_FOLDER scratch/ --OUTDIR scratch/out/ -work-dir scratch/work/ -with-trace
 2020-03-06 21:24:23	13.3s	nauseous_gilbert	OK	e53cddf55efbe3ca4dd4925afa16bc10	d3e6a35b-19e1-45b0-82f6-d592d5c3f6ce	nextflow run main.nf --INPUT_FOLDER scratch/ --OUTDIR scratch/out/ -work-dir scratch/work/ -with-trace
 2020-03-06 21:27:10	2m 17s	naughty_hugle	OK	e53cddf55efbe3ca4dd4925afa16bc10	33536666-56e7-4e88-8e69-ba01492eb863	nextflow run main.nf --INPUT_FOLDER scratch/ --OUTDIR scratch/out/ -work-dir scratch/work/ -with-trace
-2020-03-06 21:33:05	-	hopeful_brenner	-	e53cddf55efbe3ca4dd4925afa16bc10	33536666-56e7-4e88-8e69-ba01492eb863	nextflow run main.nf --INPUT_FOLDER scratch/ --OUTDIR scratch/out/ -work-dir scratch/work/ -with-trace -resume
+2020-03-06 21:33:05	36.4s	hopeful_brenner	OK	e53cddf55efbe3ca4dd4925afa16bc10	33536666-56e7-4e88-8e69-ba01492eb863	nextflow run main.nf --INPUT_FOLDER scratch/ --OUTDIR scratch/out/ -work-dir scratch/work/ -with-trace -resume

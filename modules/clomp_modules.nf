@@ -19,7 +19,7 @@ process Trim {
 
     // Define the output files
     output:
-      file "test.out"
+      file "*trimmed*"
 
     // Code to be executed inside the task
     script:
@@ -40,8 +40,8 @@ mv ${r1} INPUT.${r1}
 
 echo "Trimming ${r1}"
 bbduk.sh \
-    in=${r1} \
-    out=test.out \
+    in=INPUT.${r1} \
+    out="\$sample_name.trimmed.fastq.gz" \
     ktrim=r \
     k=23 \
     mink=11 \
@@ -90,12 +90,11 @@ sample_name=\$(echo ${r1} | sed 's/.R1.fastq.gz//')
 
 echo "Starting the alignment of ${r1}"
 bowtie2 \
-    ${params.BWT_SECOND_PASS_OPTIONS} \
+    --no-unal \
     --threads ${task.cpus} \
-    -x ${params.BWT_DB_PREFIX} \
-    -q \
+    -x "${baseDir}/ref" \
     -U <(gunzip -c ${r1}) | \
-    samtools view -Sb - > \${r1}.bam 2>&1 | \
+    samtools view -Sb - > \$sample_name.bam 2>&1 | \
     tee -a \${sample_name}.log
 
       """

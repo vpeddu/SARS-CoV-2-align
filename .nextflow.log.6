@@ -1,71 +1,65 @@
-Mar-06 20:53:44.734 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --INPUT_FOLDER scratch/ --OUTDIR scratch/out/ -work-dir scratch/work/ -with-trace
-Mar-06 20:53:44.828 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
-Mar-06 20:53:44.868 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [thirsty_curran] - revision: 807a15c3ba
-Mar-06 20:53:44.881 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/nextflow.config
-Mar-06 20:53:44.882 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/nextflow.config
-Mar-06 20:53:44.904 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
-Mar-06 20:53:45.345 [main] DEBUG nextflow.Session - Session uuid: 96880f29-3e4d-457a-ae7c-25a9613de316
-Mar-06 20:53:45.346 [main] DEBUG nextflow.Session - Run name: thirsty_curran
-Mar-06 20:53:45.346 [main] DEBUG nextflow.Session - Executor pool size: 8
-Mar-06 20:53:45.384 [main] DEBUG nextflow.cli.CmdRun - 
+Mar-06 21:07:38.729 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --INPUT_FOLDER scratch/ --OUTDIR scratch/out/ -work-dir scratch/work/ -with-trace
+Mar-06 21:07:38.834 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Mar-06 21:07:38.870 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [reverent_noether] - revision: e53cddf55e
+Mar-06 21:07:38.879 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/nextflow.config
+Mar-06 21:07:38.879 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/nextflow.config
+Mar-06 21:07:38.897 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-06 21:07:39.274 [main] DEBUG nextflow.Session - Session uuid: d81d9ff8-c331-47ed-a949-a155d5d87444
+Mar-06 21:07:39.274 [main] DEBUG nextflow.Session - Run name: reverent_noether
+Mar-06 21:07:39.274 [main] DEBUG nextflow.Session - Executor pool size: 8
+Mar-06 21:07:39.327 [main] DEBUG nextflow.cli.CmdRun - 
   Version: 20.01.0 build 5264
   Created: 12-02-2020 10:14 UTC (02:14 PDT)
   System: Mac OS X 10.14.6
   Runtime: Groovy 2.5.8 on Java HotSpot(TM) 64-Bit Server VM 11.0.1+13-LTS
   Encoding: UTF-8 (UTF-8)
-  Process: 49757@uw-virongs-vikas.local [140.142.101.178]
-  CPUs: 8 - Mem: 40 GB (466.8 MB) - Swap: 9 GB (926 MB)
-Mar-06 20:53:45.396 [main] DEBUG nextflow.Session - Work-dir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work [Mac OS X]
-Mar-06 20:53:45.396 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/bin
-Mar-06 20:53:45.413 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
-Mar-06 20:53:45.415 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Mar-06 20:53:45.517 [main] DEBUG nextflow.Session - Session start invoked
-Mar-06 20:53:45.520 [main] DEBUG nextflow.trace.TraceFileObserver - Flow starting -- trace file: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/trace.txt
-Mar-06 20:53:45.698 [main] WARN  nextflow.NextflowMeta$Preview - DSL 2 IS AN EXPERIMENTAL FEATURE UNDER DEVELOPMENT -- SYNTAX MAY CHANGE IN FUTURE RELEASE
-Mar-06 20:53:45.701 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Mar-06 20:53:45.812 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Align, Trim
-Mar-06 20:53:45.887 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:Trim` matches process Trim
-Mar-06 20:53:45.893 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-06 20:53:45.893 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-06 20:53:45.897 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Mar-06 20:53:45.900 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=40 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
-Mar-06 20:53:45.947 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > Trim -- maxForks: 8; blocking: false
-Mar-06 20:53:45.972 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:Align` matches process Align
-Mar-06 20:53:45.973 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Mar-06 20:53:45.973 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Mar-06 20:53:45.974 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > Align -- maxForks: 8; blocking: false
-Mar-06 20:53:45.990 [main] DEBUG nextflow.Session - Ignite dataflow network (3)
-Mar-06 20:53:45.997 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Trim
-Mar-06 20:53:45.997 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Align
-Mar-06 20:53:45.997 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Mar-06 20:53:45.997 [main] DEBUG nextflow.Session - Session await
-Mar-06 20:53:46.058 [Actor Thread 3] DEBUG nextflow.util.CacheHelper - Unable to get file attributes file: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/${params.INPUT_FOLDER}*.fastq.gz -- Cause: java.nio.file.NoSuchFileException: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/${params.INPUT_FOLDER}*.fastq.gz
-Mar-06 20:53:46.104 [Task submitter] WARN  nextflow.executor.BashWrapperBuilder - Task runtime metrics are not reported when using macOS without a container engine
-Mar-06 20:53:46.115 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-06 20:53:46.120 [Task submitter] INFO  nextflow.Session - [56/fd985d] Submitted process > Trim (1)
-Mar-06 20:53:46.140 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: Trim (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/56/fd985d836ce842e207d27d74411d9c]
-Mar-06 20:53:46.144 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `Trim (1)` is unable to find [UnixPath]: `/Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/56/fd985d836ce842e207d27d74411d9c/test.out` (pattern: `test.out`)
-Mar-06 20:53:46.153 [Task monitor] INFO  nextflow.processor.TaskProcessor - [56/fd985d] NOTE: Missing output file(s) `test.out` expected by process `Trim (1)` -- Execution is retried (1)
-Mar-06 20:53:46.162 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-06 20:53:46.209 [Task submitter] INFO  nextflow.Session - [1b/e4dfa2] Re-submitted process > Trim (1)
-Mar-06 20:53:46.223 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: Trim (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/1b/e4dfa2b7342c0b70d61087a69fa9c9]
-Mar-06 20:53:46.224 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `Trim (1)` is unable to find [UnixPath]: `/Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/1b/e4dfa2b7342c0b70d61087a69fa9c9/test.out` (pattern: `test.out`)
-Mar-06 20:53:46.226 [Task monitor] INFO  nextflow.processor.TaskProcessor - [1b/e4dfa2] NOTE: Missing output file(s) `test.out` expected by process `Trim (1)` -- Execution is retried (2)
-Mar-06 20:53:46.235 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-06 20:53:46.235 [Task submitter] INFO  nextflow.Session - [ef/421c6a] Re-submitted process > Trim (1)
-Mar-06 20:53:46.249 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: Trim (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ef/421c6a4de6d4ed35e65c42d5c7fa1c]
-Mar-06 20:53:46.250 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `Trim (1)` is unable to find [UnixPath]: `/Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ef/421c6a4de6d4ed35e65c42d5c7fa1c/test.out` (pattern: `test.out`)
-Mar-06 20:53:46.251 [Task monitor] INFO  nextflow.processor.TaskProcessor - [ef/421c6a] NOTE: Missing output file(s) `test.out` expected by process `Trim (1)` -- Execution is retried (3)
-Mar-06 20:53:46.258 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Mar-06 20:53:46.259 [Task submitter] INFO  nextflow.Session - [ba/e5fc7b] Re-submitted process > Trim (1)
-Mar-06 20:53:46.273 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: Trim (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a]
-Mar-06 20:53:46.273 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process `Trim (1)` is unable to find [UnixPath]: `/Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a/test.out` (pattern: `test.out`)
-Mar-06 20:53:46.277 [Task monitor] DEBUG nextflow.processor.TaskRun - Unable to dump output of process 'null' -- Cause: java.nio.file.NoSuchFileException: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a/.command.out
-Mar-06 20:53:46.278 [Task monitor] DEBUG nextflow.processor.TaskRun - Unable to dump error of process 'null' -- Cause: java.nio.file.NoSuchFileException: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a/.command.err
-Mar-06 20:53:46.279 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'Trim (1)'
+  Process: 51838@uw-virongs-vikas.local [140.142.101.178]
+  CPUs: 8 - Mem: 40 GB (312.7 MB) - Swap: 9 GB (1022 MB)
+Mar-06 21:07:39.339 [main] DEBUG nextflow.Session - Work-dir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work [Mac OS X]
+Mar-06 21:07:39.339 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/bin
+Mar-06 21:07:39.355 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Mar-06 21:07:39.356 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-06 21:07:39.454 [main] DEBUG nextflow.Session - Session start invoked
+Mar-06 21:07:39.456 [main] DEBUG nextflow.trace.TraceFileObserver - Flow starting -- trace file: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/trace.txt
+Mar-06 21:07:39.647 [main] WARN  nextflow.NextflowMeta$Preview - DSL 2 IS AN EXPERIMENTAL FEATURE UNDER DEVELOPMENT -- SYNTAX MAY CHANGE IN FUTURE RELEASE
+Mar-06 21:07:39.650 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-06 21:07:39.770 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: Align, Trim
+Mar-06 21:07:39.857 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:Trim` matches process Trim
+Mar-06 21:07:39.863 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-06 21:07:39.864 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-06 21:07:39.868 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-06 21:07:39.871 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=40 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Mar-06 21:07:39.919 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > Trim -- maxForks: 8; blocking: false
+Mar-06 21:07:39.945 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:Align` matches process Align
+Mar-06 21:07:39.946 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-06 21:07:39.946 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-06 21:07:39.947 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > Align -- maxForks: 8; blocking: false
+Mar-06 21:07:39.965 [main] DEBUG nextflow.Session - Ignite dataflow network (3)
+Mar-06 21:07:39.971 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Trim
+Mar-06 21:07:39.972 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Align
+Mar-06 21:07:39.972 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Mar-06 21:07:39.974 [main] DEBUG nextflow.Session - Session await
+Mar-06 21:07:39.976 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: scratch/; pattern: *.fastq.gz; options: [:]
+Mar-06 21:07:40.097 [Task submitter] WARN  nextflow.executor.BashWrapperBuilder - Task runtime metrics are not reported when using macOS without a container engine
+Mar-06 21:07:40.157 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-06 21:07:40.161 [Task submitter] INFO  nextflow.Session - [7a/841b15] Submitted process > Trim (1)
+Mar-06 21:07:40.434 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: Trim (1); status: COMPLETED; exit: 1; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/7a/841b15c7a51a828075a219db80ecbb]
+Mar-06 21:07:40.441 [Task monitor] INFO  nextflow.processor.TaskProcessor - [7a/841b15] NOTE: Process `Trim (1)` terminated with an error exit status (1) -- Execution is retried (1)
+Mar-06 21:07:40.451 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-06 21:07:40.452 [Task submitter] INFO  nextflow.Session - [ef/c51ab6] Re-submitted process > Trim (1)
+Mar-06 21:07:40.680 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: Trim (1); status: COMPLETED; exit: 1; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ef/c51ab642cabcbbd71bcd6a4c51302e]
+Mar-06 21:07:40.681 [Task monitor] INFO  nextflow.processor.TaskProcessor - [ef/c51ab6] NOTE: Process `Trim (1)` terminated with an error exit status (1) -- Execution is retried (2)
+Mar-06 21:07:40.689 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-06 21:07:40.690 [Task submitter] INFO  nextflow.Session - [b8/7c88db] Re-submitted process > Trim (1)
+Mar-06 21:07:40.914 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: Trim (1); status: COMPLETED; exit: 1; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/b8/7c88dbd2b6f27d30dacc00a3664c02]
+Mar-06 21:07:40.915 [Task monitor] INFO  nextflow.processor.TaskProcessor - [b8/7c88db] NOTE: Process `Trim (1)` terminated with an error exit status (1) -- Execution is retried (3)
+Mar-06 21:07:40.919 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-06 21:07:40.920 [Task submitter] INFO  nextflow.Session - [48/99e515] Re-submitted process > Trim (1)
+Mar-06 21:07:41.129 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: Trim (1); status: COMPLETED; exit: 1; error: -; workDir: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/48/99e515ec0bd560db246687a458d80b]
+Mar-06 21:07:41.167 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'Trim (1)'
 
 Caused by:
-  Missing output file(s) `test.out` expected by process `Trim (1)`
+  Process `Trim (1)` terminated with an error exit status (1)
 
 Command executed:
 
@@ -77,35 +71,57 @@ Command executed:
   ls -lahtr
   
   # Get the sample name from the file name
-  sample_name=$(echo ${params.INPUT_FOLDER}*.fastq.gz | sed 's/.R1_001.fastq.gz//')
+  sample_name=$(echo UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz | sed 's/.R1_001.fastq.gz//')
   echo "Processing $sample_name"
   
   # Rename the input file to make sure we don't use it as the output
-  mv ${params.INPUT_FOLDER}*.fastq.gz INPUT.${params.INPUT_FOLDER}*.fastq.gz
+  mv UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz INPUT.UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz
   
-  echo "Trimming ${params.INPUT_FOLDER}*.fastq.gz"
-  bbduk.sh     in=${params.INPUT_FOLDER}*.fastq.gz     out=test.out     ktrim=r     k=23     mink=11     hdist=1     tpe     minlength=60     tbo     qtrim=r     trimq=10     adapters=adapters.fa
+  echo "Trimming UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz"
+  bbduk.sh     in=UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz     out=test.out     ktrim=r     k=23     mink=11     hdist=1     tpe     minlength=60     tbo     qtrim=r     trimq=10     adapters="/Users/gerbix/Documents/vikas/SARS-CoV-2-align/adapters.fa"
 
 Command exit status:
-  0
+  1
 
 Command output:
-  (empty)
+  total 32
+  drwxr-xr-x   3 gerbix  staff    96B Mar  6 21:07 ..
+  -rw-r--r--   1 gerbix  staff   9.1K Mar  6 21:07 .command.run
+  -rw-r--r--   1 gerbix  staff   743B Mar  6 21:07 .command.sh
+  -rw-r--r--   1 gerbix  staff     0B Mar  6 21:07 .command.log
+  -rw-r--r--   1 gerbix  staff     0B Mar  6 21:07 .command.begin
+  lrwxr-xr-x   1 gerbix  staff    96B Mar  6 21:07 UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz -> /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz
+  -rw-r--r--   1 gerbix  staff     0B Mar  6 21:07 .command.err
+  -rw-r--r--   1 gerbix  staff     0B Mar  6 21:07 .command.out
+  -rw-r--r--   1 gerbix  staff     0B Mar  6 21:07 .command.trace
+  drwxr-xr-x  10 gerbix  staff   320B Mar  6 21:07 .
+  Processing UWVL20030501-A01-VIRv1_S1
+  Trimming UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz
+
+Command error:
+  Max memory cannot be determined.  Attempting to use 1400 MB.
+  If this fails, please add the -Xmx flag (e.g. -Xmx24g) to your command, 
+  or run this program qsubbed or from a qlogin session on Genepool, or set ulimit to an appropriate value.
+  java -ea -Xmx1400m -Xms1400m -cp /usr/local/Cellar/bbtools/38.70/current/ jgi.BBDuk in=UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz out=test.out ktrim=r k=23 mink=11 hdist=1 tpe minlength=60 tbo qtrim=r trimq=10 adapters=/Users/gerbix/Documents/vikas/SARS-CoV-2-align/adapters.fa
+  Executing jgi.BBDuk [in=UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz, out=test.out, ktrim=r, k=23, mink=11, hdist=1, tpe, minlength=60, tbo, qtrim=r, trimq=10, adapters=/Users/gerbix/Documents/vikas/SARS-CoV-2-align/adapters.fa]
+  Version 38.70
+  
+  maskMiddle was disabled because useShortKmers=true
+  Exception in thread "main" java.lang.RuntimeException: Can't read file 'UWVL20030501-A01-VIRv1_S1_R1_001.fastq.gz'
+  	at shared.Tools.testInputFiles(Tools.java:1177)
+  	at jgi.BBDuk.<init>(BBDuk.java:919)
+  	at jgi.BBDuk.main(BBDuk.java:76)
 
 Work dir:
-  /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a
+  /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/48/99e515ec0bd560db246687a458d80b
 
-Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
-Mar-06 20:53:46.285 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `test.out` expected by process `Trim (1)`
-Mar-06 20:53:46.289 [Actor Thread 3] DEBUG nextflow.extension.PublishOp - Publish operator complete
-Mar-06 20:53:46.289 [Actor Thread 2] DEBUG nextflow.extension.PublishOp - Publish operator complete
-Mar-06 20:53:46.290 [main] DEBUG nextflow.Session - Session await > all process finished
-Mar-06 20:53:46.298 [Task monitor] DEBUG nextflow.processor.TaskRun - Unable to dump error of process 'null' -- Cause: java.nio.file.NoSuchFileException: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a/.command.err
-Mar-06 20:53:46.299 [Task monitor] DEBUG nextflow.processor.TaskRun - Unable to dump output of process 'null' -- Cause: java.nio.file.NoSuchFileException: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a/.command.out
-Mar-06 20:53:46.300 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Mar-06 20:53:46.301 [main] DEBUG nextflow.processor.TaskRun - Unable to dump error of process 'null' -- Cause: java.nio.file.NoSuchFileException: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a/.command.err
-Mar-06 20:53:46.301 [main] DEBUG nextflow.processor.TaskRun - Unable to dump output of process 'null' -- Cause: java.nio.file.NoSuchFileException: /Users/gerbix/Documents/vikas/SARS-CoV-2-align/scratch/work/ba/e5fc7bc32e744ec6fa8997b0a7df8a/.command.out
-Mar-06 20:53:46.304 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=4; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=3; abortedCount=0; succeedDuration=0ms; failedDuration=88ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=8; peakMemory=10 GB; ]
-Mar-06 20:53:46.304 [main] DEBUG nextflow.trace.TraceFileObserver - Flow completing -- flushing trace file
-Mar-06 20:53:46.500 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
-Mar-06 20:53:46.513 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Mar-06 21:07:41.170 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `Trim (1)` terminated with an error exit status (1)
+Mar-06 21:07:41.171 [Actor Thread 3] DEBUG nextflow.extension.PublishOp - Publish operator complete
+Mar-06 21:07:41.172 [Actor Thread 2] DEBUG nextflow.extension.PublishOp - Publish operator complete
+Mar-06 21:07:41.172 [main] DEBUG nextflow.Session - Session await > all process finished
+Mar-06 21:07:41.180 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-06 21:07:41.187 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=4; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=3; abortedCount=0; succeedDuration=0ms; failedDuration=5s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=8; peakMemory=10 GB; ]
+Mar-06 21:07:41.187 [main] DEBUG nextflow.trace.TraceFileObserver - Flow completing -- flushing trace file
+Mar-06 21:07:41.385 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Mar-06 21:07:41.394 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -19,7 +19,7 @@ process Trim {
 
     // Define the output files
     output:
-      file("${r1}")
+      file "test.out"
 
     // Code to be executed inside the task
     script:
@@ -40,8 +40,8 @@ mv ${r1} INPUT.${r1}
 
 echo "Trimming ${r1}"
 bbduk.sh \
-    in=INPUT.${r1} \
-    out=${r1} \
+    in=${r1} \
+    out=test.out \
     ktrim=r \
     k=23 \
     mink=11 \
@@ -50,7 +50,8 @@ bbduk.sh \
     minlength=60 \
     tbo \
     qtrim=r \
-    trimq=10
+    trimq=10 \
+    adapters="${baseDir}/adapters.fa"
 """
 }
 
@@ -68,7 +69,6 @@ process Align {
     // Define the input files
     input:
       file r1
-      file "*"
 
     // Define the output files
     output:
